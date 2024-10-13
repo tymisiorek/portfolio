@@ -4,7 +4,7 @@ import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg
 import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Hashir",
+  name: "Ty",
   links: [
     {
       title: "About",
@@ -18,19 +18,19 @@ export const navigation = {
       title: "Contact",
       link: "#contact",
     },
+    // {
+    //   title: "Links",
+    //   link: "/links",
+    // },
     {
-      title: "Links",
-      link: "/links",
-    },
-    {
-      title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
+      title: "Linkedin",
+      link: "https://www.linkedin.com/in/tymisiorek/",
     }
   ],
 }
 export const intro = {
-  title: "Hey, I'm Hashir",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "Hey, I'm Ty!",
+  description: "I'm Currently a Third-Year Computer Science Student at the University of Virginia",
   image: profile.src,
   buttons: [
     {
@@ -40,7 +40,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      link: "https://drive.google.com/file/d/1N1y-Y6Z71xMro3zOavs2hDjM13AhWRph/view?usp=drive_link",
       isPrimary: false,
     },
   ],
@@ -49,66 +49,64 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+    "I'm a third-year Computer Science major in the School of Engineering at the University of Virginia, currently doing research in the School of Data Science. My academic and research experience has fueled my passion for AI and Machine Learning, and I'm excited to apply the skills I've learned to real-world challenges. Outside of school, some of my favorite things to do are playing basketball, listening to music, and playing with my dog. (She's a little too old to play now :/)",
   ],
 }
 
-export const work = {
-  title: "What I do",
-  cards: [
-    {
-      title: "Mobile App Development",
-      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
-      icons: null,
-    },
-    {
-      title: "Web Development",
-      description: "I create responsive static websites using Reactjs.",
-      icons: null,
-    }
-  ],
-}
+// export const work = {
+//   title: "What I do",
+//   cards: [
+//     {
+//       title: "Mobile App Development",
+//       description: "I create pixel perfect iOS and Andriod apps using Flutter.",
+//       icons: null,
+//     },
+//     {
+//       title: "Web Development",
+//       description: "I create responsive static websites using Reactjs.",
+//       icons: null,
+//     }
+//   ],
+// }
 
 export const projects = {
   title: "Projects",
   cards: [
     {
-      title: "StarBook",
-      description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
+      title: "SongScribe",
+      description: "An interactive network visualization of the top Spotify artists, highlighting the interconnectedness of the music collaboration landscape.",
       icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-        },
+        // {
+        //   icon: faAppStore,
+        //   link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
+        // },
         {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/star_book",
+          link: "https://github.com/tymisiorek/songscribe",
         },
       ]
     },
     {
-      title: "QuranTalk",
-      description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
+      title: "Connected Data Hub",
+      description: "Files from my research over the past year. Details the process and changes within the process over time.",
       icons: [
+        // {
+        //   icon: faAppStore,
+        //   link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
+        // },
         {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-        },
-        {
-          icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
+          icon: faGithub,
+          link: "https://github.com/tymisiorek/connected-data",
         },
       ]
     },
     {
-      title: "Portfolio",
-      description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
+      title: "theCourseForum",
+      description: "Developer @ theCourseForum.com, the largest course review platform at UVA, serving 80% of the student body.",
       icons: [
         {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/portfolio",
+          link: "https://github.com/thecourseforum",
         },
       ]
     },
@@ -117,16 +115,16 @@ export const projects = {
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
+  description: "Feel free to email me or connect on LinkedIn if you'd like to reach out!",
   buttons: [
     {
       title: "Email Me",
-      link: "mailto:hashirshoaeb@gmail.com",
+      link: "mailto:tymisiorek@gmail.com",
       isPrimary: true,
     },
     {
-      title: "Schedule Meeting",
-      link: "https://topmate.io/hashirshoaeb",
+      title: "Linkedin",
+      link: "https://www.linkedin.com/in/tymisiorek/",
       isPrimary: false,
     },
   ]
@@ -135,19 +133,19 @@ export const contact = {
 // SEARCH ENGINE 
 export const SEO = {
   // 50 - 60 char  
-  title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
-  description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+  title: "Ty Misiorek",
+  description: "I'm Currently a Third-Year Computer Science Student at the University of Virginia.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
-  title: "@hashirshoaeb",
-  description: "Computer Engineer | Flutter | Reactjs Developer",
+  title: "@tymisiorek",
+  description: "Ty Misiorek",
   cards: [
     {
       title: "My website",
-      link: "https://hashirshoaeb.com/",
+      link: "https://tymisiorek.github.io/",
     },
     {
       title: "QuranTalk App",
@@ -159,11 +157,11 @@ export const links = {
     },
     {
       title: "My GitHub",
-      link: "https://github.com/hashirshoaeb/",
+      link: "https://github.com/tymisiorek/",
     },
     {
       title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/hashirshoaeb/",
+      link: "https://www.linkedin.com/in/tymisiorek/",
     },
   ]
 }
