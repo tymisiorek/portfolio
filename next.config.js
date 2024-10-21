@@ -5,33 +5,66 @@ const isProd = process.env.NODE_ENV === 'production'
  * then add it. 
  * https://stackoverflow.com/questions/60452054/nextjs-deploy-to-a-specific-url-path
  */
+// function getBasePath() {
+//   var basePath = undefined
+
+//   if (isProd && process.env.BASE_PATH) {
+//     if (process.env.BASE_PATH.startsWith("/")) {
+//       basePath = process.env.BASE_PATH;
+//     } else {
+//       basePath = "/" + process.env.BASE_PATH;
+//     }
+//   }
+//   return basePath
+// }
+
+// const basePath = getBasePath()
+// console.warn(
+//   // "Are you publishing to <username>.github.io ? then [basePath] should be empty.\n" +
+//   // "Are you publishing to <username>.github.io/<repository> ? then [basePath] should be /<repository>.\n" +
+//   `P.S. [basePath] is {${basePath}}`
+// )
+
+// const nextConfig = {
+//   reactStrictMode: true,
+//   basePath: basePath,
+//   assetPrefix: basePath,
+//   publicRuntimeConfig: {
+//     basePath: basePath,
+//   },
+// }
+
+// module.exports = nextConfig
+
 function getBasePath() {
-  var basePath = undefined
+  let basePath = '';
 
   if (isProd && process.env.BASE_PATH) {
-    if (process.env.BASE_PATH.startsWith("/")) {
+    if (process.env.BASE_PATH.startsWith('/')) {
       basePath = process.env.BASE_PATH;
     } else {
-      basePath = "/" + process.env.BASE_PATH;
+      basePath = '/' + process.env.BASE_PATH;
     }
+  } else {
+    // Hardcode for GitHub Pages to be "/portfolio"
+    basePath = '/portfolio'; // Replace 'portfolio' with your repo name
   }
-  return basePath
+  return basePath;
 }
 
-const basePath = getBasePath()
+const basePath = getBasePath();
 console.warn(
-  // "Are you publishing to <username>.github.io ? then [basePath] should be empty.\n" +
-  // "Are you publishing to <username>.github.io/<repository> ? then [basePath] should be /<repository>.\n" +
   `P.S. [basePath] is {${basePath}}`
-)
+);
 
 const nextConfig = {
   reactStrictMode: true,
   basePath: basePath,
   assetPrefix: basePath,
+  trailingSlash: true, // Ensure pages are exported with trailing slash for static export
   publicRuntimeConfig: {
     basePath: basePath,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
